@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">MicrogatgetsNew2</string>
+    <string name="number_one"><font color="@colors/text_color_blue">№1 в мире</font></string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bluetooth_pro_item_disc">• Аккумулятор\n• Антенна\n• безопасные динамики - 2 шт.\n• Блютус-гарнитура\n• Выводной микрофон\n• Выводной микрофон\n• Зарядное устройство\n• Извлекатель-внедритель\n• Кнопка приема и сброса вызова\n• Кнопка-пищалка\n• Магнитные динамики - 2 шт.</string>
+    <string name="magnetic_item_disc">• Антенна\n• Батарейка Крона\n• Гарнитура с микрофоном\n• Извлекатель-внедритель\n• Магнитные динамики - 2 шт.</string>
+    <string name="professional_item_disc">• Аккумулятор\n• Антенна\n• Безопасные динамики - 2 шт.\n•Выводной микрофон\n• Зарядное устройство\n• Извлекатель-внедритель\n• Кнопка приема вызова и сброса\n• Кнопка-пищалка\n• Магнитные динамики - 2 шт.</string>
+    <string-array name="price_magnet_accum">
+        <item>2400₽</item>
+        <item>3500₽</item>
+    </string-array>
+    <string-array name="name_capsule">
+        <item>Magnetic +</item>
+        <item>Pro +</item>
+        <item>Bluetooth Nano +</item>
+        <item>Bluetooth Nano Pro +</item>
+    </string-array>
+    <string-array name="disc_capsule">
+        <item>Капсульные проводные микронаушники Magnetic + оснащены встроенным микрофоном и кнопкой...</item>
+        <item>Капсульные проводные микронаушники Pro + оснащены выведенным микрофоном, кнопкой...</item>
+        <item>Капсульные микронаушники Bluetooth Nano + , главная фишка данного комплекта - компактный размер...</item>
+        <item>Капсульные микронаушники Bluetooth Nano Pro + , главная фишка данного комплекта - компактный размер...</item>
+    </string-array>
+    <string-array name="price_capsule">
+        <item>Цена: 1999₽</item>
+        <item>Цена: 2499₽</item>
+        <item>Цена: 2999₽</item>
+        <item>Цена: 3499₽</item>
+    </string-array>
+    <string-array name="name_vip">
+        <item>Box +</item>
+        <item>Vip Box Pro +</item>
+    </string-array>
+    <string-array name="disc_vip">
+        <item>Ультрасовременный комплект микронаушников, сочетающий в себе беспроводное соединение...</item>
+        <item>Bluetooth-гарнитура без антенны со встроенным микрофоном.</item>
+    </string-array>
+    <string-array name="price_vip">
+        <item>Цена: 4999₽</item>
+        <item>Цена: 6499₽</item>
+    </string-array>
+    <string-array name="sales_text">
+        <item>Microgatgets - бренд микронаушников\n№1 в мире\nНезаметно, безопасно, легально.\nСобственное производство и гарантия\nнизких цен.</item>
+        <item>Microgatgets - бренд микронаушников\n№1 в мире\nНезаметно, безопасно, легально.\nСобственное производство и гарантия\nнизких цен.</item>
+        <item>Арендуй 2 микронаушника по цене\nодного для себя и для друга.\n\nАкция доступна во всех наших\nгородах, где есть возможность аренды\nмикронаушника</item>
+    </string-array>
+    <string-array name="sales_text_button">
+        <item>Выбрать\nмикронаушник</item>
+        <item>Выбрать\nмикронаушник</item>
+        <item>Узнать\nбольше</item>
+    </string-array>
+    <string-array name="sales_title">
+        <item>Купить\nмикронаушники</item>
+        <item>Аренда\nмикронаушников</item>
+        <item>Спецпредложение</item>
+    </string-array>
+    <string-array name="sales_text_city">
+        <item>В 33 городах</item>
+        <item>В 33 городах</item>
+        <item>Выгодный выбор</item>
+    </string-array>
+    <string-array name="sales_text_choice">
+        <item>Выбрать свой ❯</item>
+        <item>Выбрать свой ❯</item>
+        <item>2 по цене 1!</item>
+    </string-array>
+    <string-array name="sales_cost">
+        <item>От 999 руб</item>
+        <item>От 250 руб</item>
+        <item>2 по цене 1!</item>
+    </string-array>
+</resources>

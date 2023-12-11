@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_border_layout"
+    android:paddingBottom="29dp">
+
+    <TextView
+        android:id="@+id/textViewTakeCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Заказать звонок"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonClose"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/button_close_orange"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/textViewDisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewTakeCall"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Оставьте свои контактные данные и наш \nменеджер в ближайшее время свяжется \nс вами"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textViewTakeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите ваше имя:"
+        app:layout_constraintTop_toBottomOf="@id/textViewDisc"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="20dp"/>
+    
+    <EditText
+        android:id="@+id/editTextTakeName"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewTakeName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:hint="Введите имя"
+        android:textColorHint="@color/hint_color"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/textViewTakePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextTakeName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Введите ваш телефон:"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextTakePhone"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewTakePhone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:hint="Введите ваш номер телефона"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/textViewPolitic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextTakePhone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Отправляя заявку я соглашаюсь с условиями \nполитики конфиденциальности"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/text_gray"
+        android:textSize="8sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButtonTakeCall"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewPolitic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_main"
+        android:text="Сделать заказ!"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

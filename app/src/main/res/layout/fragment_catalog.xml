@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/textViewCatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Каталог"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17dp"/>
+
+    <TextView
+        android:id="@+id/textViewWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewCatalog"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Главная / Каталог"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="17dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewWay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scrollbars="none"
+            android:paddingBottom="15dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutCatalogList"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewWay"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemProfessional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/professional_buy_main"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Professional"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2400₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreProfessional"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyProfessional"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemMagnetic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutCatalogItemProfessional"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/magnetic_buy_main"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Magnetic"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 1100₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreMagnetic"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyMagnetic"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemBluetoothPro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutCatalogItemMagnetic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bluetooth_pro_buy_main"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bluetooth Pro"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 3500₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreBluetoothPro"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyBluetoothPro"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemBluetoothNano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutCatalogItemBluetoothPro"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bluetooth_nano_buy_main"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bluetooth Nano"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 3800₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreBluetoothNano"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyBluetoothNano"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemBluetoothNanoCapsule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutCatalogItemBluetoothNano"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bluetooth_nano_plus_buy_main" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bluetooth Nano +"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 3800₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreBluetoothNanoCapsule"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyBluetoothNanoCapsule"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemBluetoothNanoPro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutCatalogItemBluetoothNanoCapsule"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bluetooth_nano_pro_buy_main"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bluetooth Nano Pro"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 3800₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreBluetoothNanoPro"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyBluetoothNanoPro"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemBluetoothNanoProCapsule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutCatalogItemBluetoothNanoPro"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bluetooth_nano_pro_plus_buy_main"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bluetooth Nano Pro +"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 3800₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreBluetoothNanoProCapsule"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyBluetoothNanoProCapsule"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutCatalogItemBluetoothNanoProCapsule"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/box_plus_buy_main"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Box +"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 3800₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreBox"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyBox"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCatalogItemBoxVip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayoutCatalogItemBox"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_border_layout"
+                    android:paddingBottom="26dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vip_box_pro_plus_buy_main"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vip Box Pro +"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black"
+                        android:textSize="27sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена:"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 3800₽"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonMoreBoxVip"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Подробнее"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButtonBuyBoxVip"
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_main"
+                            android:text="Купить"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

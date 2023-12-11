@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".StripFragment"
+    android:background="@drawable/custom_border_layout">
+
+    <ImageView
+        android:id="@+id/imageViewStrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/magnetic_buy_main"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:id="@+id/textViewStripName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magnetic"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="22.81sp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/textViewStripDisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Данный комплект микронаушников\nявляется самым бюджетным из нашего\n ассортимента. Упрощенная..."
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цена: "
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/textViewStripCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1100₽"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_main"
+            android:text="Подробнее"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="11.24sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButtonBuy"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_main"
+            android:layout_marginLeft="14.66dp"
+            android:text="Купить"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="11.24sp"
+            android:fontFamily="@font/montserrat_bold"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewStripSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

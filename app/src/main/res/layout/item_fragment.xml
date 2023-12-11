@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_border_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_marginTop="15dp"
+                android:id="@+id/viewPagerImage"
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professional"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="22sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="19dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutPrice"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Цена: "
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2399₽"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цвет:"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/black"
+                android:textSize="11sp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/custom_border_layout"
+                    android:text="Черный"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    android:textAlignment="center"
+                    android:button="@null"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/custom_border_layout"
+                    android:text="Белый"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    android:textAlignment="center"
+                    android:button="@null"
+                    android:layout_marginLeft="9dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество: "
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/black"
+                android:textSize="11sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="6dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonMinusCount"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/minus_icon_button"
+                    android:background="@color/background_button_minus_plus"/>
+
+                <TextView
+                    android:id="@+id/textViewCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonPlusCount"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/plus_icon_button"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/background_button_minus_plus"/>
+
+            </LinearLayout>
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Купить"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_main"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В комплекте: "
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/textViewDisc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:text="@string/professional_item_disc"
+                android:paddingBottom="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#F5F5F5</color>
+    <color name="start_gradient_button">#1787D2</color>
+    <color name="start_red_gradient_button">#FF4343</color>
+    <color name="end_red_gradient_button">#FF0000</color>
+    <color name="end_gradient_button">#186598</color>
+    <color name="gray">#FF828587</color>
+    <color name="text_color_blue">#1785CE</color>
+    <color name="text_color_orange">#EB8B1B</color>
+    <color name="start_green_gradient">#A1D217</color>
+    <color name="end_green_gradient">#779818</color>
+    <color name="start_blue_radial_gradient">#1787D2</color>
+    <color name="middle_blue_radial_gradient">#188DDB</color>
+    <color name="end_blue_radial_gradient">#0099FF</color>
+    <color name="gray_text">#6D6D6D</color>
+    <color name="black_background">#2C2C2C</color>
+    <color name="hint_color">#D9D9D9</color>
+    <color name="start_orange_gradient">#FFAB48</color>
+    <color name="end_orange_gradient">#EB8B1B</color>
+    <color name="text_gray">#767676</color>
+    <color name="dialog_background">#1A000000</color>
+    <color name="background_filter">#186598</color>
+    <color name="border">#D9D9D9</color>
+    <color name="background_button_minus_plus">#F1F1F1</color>
+</resources>
