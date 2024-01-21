@@ -251,7 +251,7 @@
 
                     <androidx.fragment.app.FragmentContainerView
                         android:id="@+id/fragment_container_view_main"
-                        android:name="com.example.microgatgetsnew2.CatalogFragment"
+                        android:name="com.example.microgatgetsnew2.RegistrationFragment"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="25dp" />

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Регистрация"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="+7-999-999-99-99"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Пароль"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Имя"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Фамилия"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextPatronymic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Отчество"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Дата рождения"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Страна"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Город"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Регистрация"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
