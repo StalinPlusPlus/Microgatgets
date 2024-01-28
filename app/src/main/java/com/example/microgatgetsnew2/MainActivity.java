@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentContainerView;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,9 +22,8 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding mainBinding;
-
+    SharedPreferences sharedPreferences;
     ImageButton imageButtonMenu;
-    ConstraintLayout constraintLayoutMenu;
     TextView textViewCatalog;
 
     @Override
@@ -33,12 +33,24 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        sharedPreferences = getSharedPreferences("MainSetting", MODE_PRIVATE);
+
+
+
         super.onCreate(savedInstanceState);
         mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
 
         setContentView(mainBinding.getRoot());
 
-        imageButtonMenu = mainBinding.imageButtonMenu;
+        if (sharedPreferences.getInt("id", 0) == 0) {
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.setReorderingAllowed(true);
+            ft.replace(R.id.fragment_container_view_main, new AuthorisationFragment());
+            ft.commit();
+        }
+
+        imageButtonMenu = mainBinding.headerMenu.buttonMenuHeader;
         textViewCatalog = mainBinding.textViewAtalog;
 
         imageButtonMenu.setOnClickListener(new View.OnClickListener() {

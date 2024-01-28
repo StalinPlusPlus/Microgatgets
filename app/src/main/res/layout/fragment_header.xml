@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/buttonMenuHeader"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:src="@drawable/menu_button_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/micragatgets_logo_menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="Микронаушники №1 В России\nПродажа | Аренда"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonCartHeader"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+        android:src="@drawable/menu_cart_icon" />
+
+</LinearLayout>

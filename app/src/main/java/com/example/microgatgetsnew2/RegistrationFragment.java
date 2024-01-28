@@ -1,13 +1,10 @@
 package com.example.microgatgetsnew2;
 
-import android.app.DatePickerDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.DatePicker;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -65,7 +62,7 @@ public class RegistrationFragment extends Fragment {
     private FragmentRegistrationBinding registrationBinding;
     private ActivityMainBinding mainBinding;
 
-    private String url = "https://cc31-85-140-126-213.ngrok-free.app";
+    private String url = GlobalVar.getUrl();
 
     private String post(String url, String json) throws IOException {
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
@@ -92,13 +89,13 @@ public class RegistrationFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 User user = new User();
-                user.Name = registrationBinding.editTextName.getText().toString();
-                user.Surname = registrationBinding.editTextSurname.getText().toString();
-                user.Birthday = registrationBinding.editTextBirthday.getText().toString();
-                user.Patronymic = registrationBinding.editTextPatronymic.getText().toString();
-                user.Country = registrationBinding.editTextCountry.getText().toString();
-                user.City = registrationBinding.editTextCity.getText().toString();
-
+                user.name = registrationBinding.editTextName.getText().toString();
+                user.surname = registrationBinding.editTextSurname.getText().toString();
+                user.birthday = registrationBinding.editTextBirthday.getText().toString();
+                user.patronymic = registrationBinding.editTextPatronymic.getText().toString();
+                user.country = registrationBinding.editTextCountry.getText().toString();
+                user.city = registrationBinding.editTextCity.getText().toString();
+                user.phone = registrationBinding.editTextPhone.getText().toString();
                 NetworkTask networkTask = new NetworkTask(user);
                 networkTask.execute();
             }
